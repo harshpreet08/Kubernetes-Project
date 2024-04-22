@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app1:
+    image: harshiscool08/app1
+    ports:
+      - '6000:6000'
+    volumes:
+      - .:/file
+
+  app2:
+    image: harshiscool08/app2
+    ports:
+      - '6002:6002'
+    volumes:
+      - .:/file
